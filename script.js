@@ -40,6 +40,7 @@ input.addEventListener('keydown', function (event) {
   event.preventDefault();
 
   if (allowedKeys.includes(event.key)) {
+    input.value = '';
     input.value += event.key;
     return;
   }
